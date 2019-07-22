@@ -58,7 +58,7 @@ const PORT = process.env.PORT || 3001;
                                     
 server.listen(PORT, () => {
 
-     console.log(`Server is running on port 3001, Open Chrome and visit localhost: ${PORT}`);
+     console.log(`Server is running on port ${PORT}`);
 
  })
 
