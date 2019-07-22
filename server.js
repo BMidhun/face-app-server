@@ -10,12 +10,9 @@ var knex = require('knex')
 
 const dbconnect = knex({
     client: 'pg',
-    version: '7.2',
-    host: '127.0.0.1',
     connection: {
-        user: 'midhun',
-        password: 'nuhdiM@007',
-        database: 'faceappdb'
+       connectionString: process.env.DATABASE_URL,
+       ssl: true,
     }
 });
 
